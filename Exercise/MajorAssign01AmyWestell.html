@@ -3,8 +3,105 @@
     <head>
         <meta charset = "UTF-8">
         <title>Sample Form</title>
+        <style>
+            body {background-color: #ede7f6; font-family: sans-serif; text-align: left;}
+            h4 {font-size: 14px;}
+        </style>
     </head>
     <body>
-        
+        <h1>
+           Sample Form 
+        </h1>
+        <h3>
+            Choose a topic, and research interest for the individual visualization project.
+        </h3> 
+        <hr>
+        <p>
+            youremail@gmail.com Switch account
+        </p>
+        <h4>
+            *Required
+        </h4> 
+        <hr>
+        <form>
+            <label for = "email">Email*</label><br>
+            <input type = "email" id = "email" name = "email">
+        </form>
+        <hr>
+        <form>
+            <label for = "fname">First name</label><br>
+            <input type = "text" id = "fname" name = "fname"><br>
+        </form>
+        <hr>
+        <form>
+            <label for = "lname">Last name</label><br>
+            <input type = "text" id = "lname" name = "lname"><br>
+        </form>
+        <hr>
+        <p style = "font-family: Arial; font-size: medium" >
+          Research interest (list at least 3)*  
+        </p>
+        <textarea name = "interest" rows = "3" cols = "30">
+        </textarea>
+        <hr>
+        <p style = "font-family: Arial; font-size: medium">
+        Project Title - (e.g. income vs education US Census)*
+        </p>
+        <textarea name = "title" rows = "1" cols = "30">
+        </textarea>
+        <hr>
+        <p style = "font-family: Arial; font-size: medium">
+        Top Skills*
+        </p>
+        <form>
+            <input type = "checkbox" id = "skill1" name = "skill1" value = "SQL">
+            <label for = "skill1"> SQL </label><br>
+            <input type = "checkbox" id = "skill2" name = "skill2" value = "Python">
+            <label for = "skill2"> Python programming </label><br>
+            <input type = "checkbox" id = "skill3" name = "skill3" value = "Matlab">
+            <label for = "skill3"> Matlab </label><br>
+            <input type = "checkbox" id = "skill4" name = "skill4" value = "D3JS">
+            <label for = "skill4"> D3js and Javascript </label><br>
+            <input type = "checkbox" id = "skill5" name = "skill5" value = "C#">
+            <label for = "skill5"> C# VB.net </label><br>
+            <input type = "checkbox" id = "skill6" name = "skill6" value = "PHP">
+            <label for = "skill6"> PHP </label><br>
+            <input type = "checkbox" id = "skill7" name = "skill7" value = "Node">
+            <label for = "skill7"> Node.JS </label><br>
+            <input type = "checkbox" id = "skill8" name = "skill8" value = "Web">
+            <label for = "skill8"> Web design tools (e.g. Wordpress) </label><br>
+            <input type = "checkbox" id = "skill9" name = "skill9" value = "HTML">
+            <label for = "skill9"> HTML and CSS </label><br>
+            <input type = "checkbox" id = "skill10" name = "skill10" value = "Excel">
+            <label for = "skill10"> Excel </label><br>
+            <input type = "checkbox" id = "skill11" name = "skill11" value = "PowerBI">
+            <label for = "skill11"> SQL </label><br>
+            <input type = "checkbox" id = "skill12" name = "skill12" value = "Tableau">
+            <label for = "skill12"> Tableau </label><br>
+            <input type = "checkbox" id = "skill13" name = "skill13" value = "Option13">
+            <label for = "skill13"> Option 13 </label><br>
+            <input type = "checkbox" id = "skill14" name = "skill14" value = "Other">
+            <label for = "skill14"> Other: </label>
+                <textarea name = "other" rows = "1" cols = "20"></textarea><br>
+        </form>
+        <hr>
+        <p style = "font-family: Arial; font-size: medium">
+            Suggestions or Questions
+            </p>
+            <textarea name = "title" rows = "3" cols = "30">
+            </textarea>
+        <form action = "/action_page.php">
+            <input type = "submit" value = "Submit">
+            <input type = "reset" value = "Clear Form">
+        </form>
+        <p style = "font-family: Arial; font-size: small">
+        Never submit passwords through replicated forms
+        </p>
+        <p style = "font-family: Arial; font-size: small">
+        This form was created by Amy Westell and definitely not Google.
+        </p><br>
+        <h2 style = "font-family: Arial; font-size: medium; text-align: center">
+            Amy Westell Forms
+        </h2>
     </body>
     </html>
