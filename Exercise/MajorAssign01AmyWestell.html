@@ -2,10 +2,13 @@
 <html lang = "en">
     <head>
         <meta charset = "UTF-8">
+        <link rel = "shorcut icon" sizes = "16X16" href = "https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png">
         <title>Sample Form</title>
         <style>
             body {background-color: #ede7f6; font-family: sans-serif; text-align: left;}
             h4 {font-size: 14px;}
+            .submitButton {background-color: #7E33FF; color: white;}
+            .clearButton {background-color: #ede7f6; color: #7E33FF; border: none;}
         </style>
     </head>
     <body>
@@ -17,14 +20,14 @@
         </h3> 
         <hr>
         <p>
-            youremail@gmail.com Switch account
+            yourEmail@gmail.com <span style = "color: blue" >Switch account</span>
         </p>
-        <h4>
+        <h4 style = "color: red">
             *Required
         </h4> 
         <hr>
         <form>
-            <label for = "email">Email*</label><br>
+            <label for = "email">Email<span style = "color: red">*</span></label><br>
             <input type = "email" id = "email" name = "email">
         </form>
         <hr>
@@ -39,19 +42,19 @@
         </form>
         <hr>
         <p style = "font-family: Arial; font-size: medium" >
-          Research interest (list at least 3)*  
+          Research interest (list at least 3)<span style = "color: red">*</span> 
         </p>
         <textarea name = "interest" rows = "3" cols = "30">
         </textarea>
         <hr>
         <p style = "font-family: Arial; font-size: medium">
-        Project Title - (e.g. income vs education US Census)*
+        Project Title - (e.g. income vs education US Census)<span style = "color: red">*</span>
         </p>
         <textarea name = "title" rows = "1" cols = "30">
         </textarea>
         <hr>
         <p style = "font-family: Arial; font-size: medium">
-        Top Skills*
+        Top Skills<span style = "color: red">*</span>
         </p>
         <form>
             <input type = "checkbox" id = "skill1" name = "skill1" value = "SQL">
@@ -91,8 +94,8 @@
             <textarea name = "title" rows = "3" cols = "30">
             </textarea>
         <form action = "/action_page.php">
-            <input type = "submit" value = "Submit">
-            <input type = "reset" value = "Clear Form">
+            <input type = "submit" value = "Submit" class = "submitButton">
+            <input type = "reset" value = "Clear Form" class = "clearButton">
         </form>
         <p style = "font-family: Arial; font-size: small">
         Never submit passwords through replicated forms
