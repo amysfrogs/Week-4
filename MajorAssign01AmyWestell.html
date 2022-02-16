@@ -5,58 +5,76 @@
         <link rel = "shorcut icon" sizes = "16X16" href = "https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png">
         <title>Sample Form</title>
         <style>
-            body {background-color: #ede7f6; font-family: sans-serif; text-align: left;}
-            h4 {font-size: 14px;}
-            .submitButton {background-color: #7E33FF; color: white;}
-            .clearButton {background-color: #ede7f6; color: #7E33FF; border: none;}
+            body {background-color: #ede7f6; font-family: "Google Sans", Roboto, sans-serif; text-align: left; margin:auto; width: 50%;}
+            h1 {padding: 10px 30px 10px 30px;}
+            h2 {padding: 0px 30px 0px 30px; font-size: 12px;}
+            h3 {font-size: 14px; padding: 10px 30px 10px 30px;}         
+            p {font-family: Roboto, sans-serif; font-size: medium; }
+            form {padding: 30px 30px 30px 30px;}
+            textarea {padding: 30px 30px 30px 30px;}
+            .submitButton {font-size: 14px; font-weight: 500; background-color: rgb(103, 58, 183); color: white; border-radius: 5px; border: rgb(103, 58, 183); padding:10px 30px 10px 30px;}
+            .clearButton {font-size: 14px; font-weight: 500; background-color: #ede7f6; color: rgb(103, 58, 183); border: none;padding:10px 30px 0px 30px;}
+            .box {border: 1px solid rgb(228, 224, 224); background-color: white; border-radius: 20px; margin: 10px;}
+            .header {background-color: white; border-radius: 17px; border-top: 10px solid rgb(103, 58, 183);}
         </style>
     </head>
     <body>
+        <div class = "box header">
         <h1>
            Sample Form 
         </h1>
-        <h3>
+        <h2>
             Choose a topic, and research interest for the individual visualization project.
-        </h3> 
+        </h2> 
         <hr>
-        <p>
+        <h3>
             yourEmail@gmail.com <span style = "color: blue" >Switch account</span>
-        </p>
-        <h4 style = "color: red">
+        </h3>
+        <h3 style = "color: red">
             *Required
-        </h4> 
-        <hr>
+        </h3> 
+        </div>
+        <div class = "box">
         <form>
             <label for = "email">Email<span style = "color: red">*</span></label><br>
             <input type = "email" id = "email" name = "email">
         </form>
-        <hr>
+        </div>
+        <div class = "box">
         <form>
             <label for = "fname">First name</label><br>
             <input type = "text" id = "fname" name = "fname"><br>
         </form>
-        <hr>
+        </div>
+        <div class = "box">
         <form>
             <label for = "lname">Last name</label><br>
             <input type = "text" id = "lname" name = "lname"><br>
         </form>
-        <hr>
-        <p style = "font-family: Arial; font-size: medium" >
+        </div>
+        <div class = "box">
+        <form>
+        <p>
           Research interest (list at least 3)<span style = "color: red">*</span> 
         </p>
         <textarea name = "interest" rows = "3" cols = "30">
         </textarea>
-        <hr>
-        <p style = "font-family: Arial; font-size: medium">
+        </form>
+        </div>
+        <div class = "box">
+        <form>
+        <p>
         Project Title - (e.g. income vs education US Census)<span style = "color: red">*</span>
         </p>
         <textarea name = "title" rows = "1" cols = "30">
         </textarea>
-        <hr>
-        <p style = "font-family: Arial; font-size: medium">
+        </form>
+        </div>
+        <div class = "box">
+        <form>
+        <p>
         Top Skills<span style = "color: red">*</span>
         </p>
-        <form>
             <input type = "checkbox" id = "skill1" name = "skill1" value = "SQL">
             <label for = "skill1"> SQL </label><br>
             <input type = "checkbox" id = "skill2" name = "skill2" value = "Python">
@@ -85,25 +103,33 @@
             <label for = "skill13"> Option 13 </label><br>
             <input type = "checkbox" id = "skill14" name = "skill14" value = "Other">
             <label for = "skill14"> Other: </label>
-                <textarea name = "other" rows = "1" cols = "20"></textarea><br>
+                <textarea name = "other" rows = "1" cols = "20" style = "padding: 0px"></textarea><br>
         </form>
-        <hr>
-        <p style = "font-family: Arial; font-size: medium">
+        </div>
+        <div class = "box">
+        <form>
+        <p>
             Suggestions or Questions
             </p>
-            <textarea name = "title" rows = "3" cols = "30">
+            <textarea name = "suggestions" rows = "3" cols = "30">
             </textarea>
-        <form action = "/action_page.php">
-            <input type = "submit" value = "Submit" class = "submitButton">
-            <input type = "reset" value = "Clear Form" class = "clearButton">
         </form>
-        <p style = "font-family: Arial; font-size: small">
+        </div>
+        <form action = "/action_page.php" >
+            <input type = "submit" value = "Submit" class = "submitButton" style = "float: left">
+            <input type = "reset" value = "Clear Form" class = "clearButton" style = "float: right">
+        </form>
+        <p style = "font-size: small; padding-left: 0px; padding-top: 0px">
         Never submit passwords through replicated forms
         </p>
-        <p style = "font-family: Arial; font-size: small">
+        <p style = "font-size: small; text-align: center">
         This form was created by Amy Westell and definitely not Google.
-        </p><br>
-        <h2 style = "font-family: Arial; font-size: medium; text-align: center">
+        </p>
+        <p style="font-size: small; text-align: center">
+            This page is meant to mimic this Google Form: <br>
+            <a href="https://forms.gle/qjz8MKR4YXWkWCVLA">https://forms.gle/qjz8MKR4YXWkWCVLA</a>
+        </p>
+        <h2 style = "font-size: medium; text-align: center">
             Amy Westell Forms
         </h2>
     </body>
